@@ -1,0 +1,79 @@
+body{background: #66CDAA; margin: 0; padding:0;
+	font: 16px/24px Arial, Tahoma, sans-serif; color: #191970;}
+	a{text-decoration: none;transition: all 0.5s;}
+ /*url(images/green_dust_scratch.png)*/
+/*структура сайта*/
+div.mid{width: 1000px;  margin: 0 auto; }
+div.header{ background:
+	radial-gradient(#fff,#7FFFD4); 
+	background-color:#7FFFD4;}
+div.header img{margin: 10px; float: left;}
+div.header h1{margin-top: 0;  font-size: 16px; font-weight: normal; font-style: italic; text-align: center; float: right;}
+div.footer {margin: 20px 0; text-align: center; text-transform: uppercase;}
+
+/*главное меню*/
+div.menu{background: #1683a3; border: 1px solid #016c8b; border-left: none; border-right: none;} 
+div.menu ul{margin: 0;padding: 0; list-style: none; text-align: center;}
+div.menu ul li{display: inline-block; margin: 5px 45px;}
+div.menu ul li a{color: #fff; text-transform: uppercase; text-shadow: 1px 1px 3px #0b4455;}
+div.menu ul li a:hover{color: #e3a111; }
+
+/*контент сайта*/
+div.fon{background:#E0FFFF ;border:1px solid #AFEEEE; border-top: none;padding: 40px;}
+div.block {width: 440px; float: left; margin:10px 0;}
+div.block:nth-of-type(even) {width: 440px; float: right; margin:10px 0;}
+div.block a p{color: #191970;}
+div.anons{background:#F5F5F5 ;border:1px solid #AFEEEE; border-radius:3px ; padding: 20px; }
+div.anons:hover {background: #e0eff4; border: 1px solid #bfd5dd; transition: all 1s;}
+div.anons img{width: 400px; height: 200px; box-shadow: 1px 1px 5px #777; }
+div.anons:hover img {transform: scale(1.15) rotate(2deg); transition: transform 0.5s;}
+div.block:nth-of-type(even) div.anons:hover img {transform: scale(1.15) rotate(-2deg);}
+div.anons h3{font-size: 20px; font-weight: normal; margin: 20px 0 10px; padding: 0; color: #01617d;line-height: 20px;}
+div.anons p{text-shadow: 1px 1px 0 #fff;}
+div.inf {width: 900px;  margin: .0 auto; }
+div.descrip,div.conect {background:#F5F5F5 ;border:1px solid #AFEEEE; border-radius:3px ; padding: 20px;}
+div.descrip img{width: 600px; height: 300px; box-shadow: 1px 1px 5px #777; margin: 10px 125px;}
+div.descrip h3 {text-align: justify; margin: 5px 125px;}
+div.descrip a {color:#C71585;}
+div.conect img{ width:200px; height: 200px;float: left;  }
+div.conect img:nth-of-type(even) {width:200px; height: 200px;float: right;margin: 0 auto;}
+div.conect ul{margin: 0;padding: 0; list-style: none; text-align: center;}
+div.conect {text-align: center;}
+.form label{
+	width: 180px;
+	float: left;
+}
+.form input { width: 500px; }
+.form textarea {width:500px;}
+.form input,.form textarea {padding: 9px; border: 1px solid #E5E5E5;
+border-radius: 5px;
+box-shadow:0 0 8px rgba(0, 0, 0, 0.1) ;
+-moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.1) ;
+-webkit-box-shadow:0 0 8px rgba(0, 0, 0, 0.1); }
+.form input:hover,.form textarea:hover,
+ .form input:focus,.form textarea:focus {
+ box-shadow:0 0 8px rgba(0, 0, 0, 0.3) ;
+-moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.3) ;
+-webkit-box-shadow:0 0 8px rgba(0, 0, 0, 0.3);	
+ }
+ 
+
+/*ПОДВАЛ сайта*/
+div.footer span {margin: 0 20px;}
+
+
+div.clear{clear: both;}
+
+/*аддаптивный дизайн сайта*/
+@media screen and (max-width: 999px) {
+	div.header img{margin: 5px;float: none;}
+	div.mid{width: 95%; }
+div.block{width: 48%;  margin:10px 0;}
+div.block:nth-of-type(even) {width: 45%;}
+div.inf {width: 100%;  margin: 10px 0;}
+div.anons img {width: 100%; }
+div.descrip img {width: 100%;margin: auto;}
+div.descrip h3 p {font-size: 18px;margin: 0;}
+div.anons h3{font-size: 18px;}
+div.header img {width: 45%;}
+}
